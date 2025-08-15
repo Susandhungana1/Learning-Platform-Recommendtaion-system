@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learning Hub - AI Powered Recommendations</title>
+  <link rel="stylesheet" href="/web/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎓 Learning Hub</h1>
+      <p>Discover personalized learning content powered by AI</p>
+    </header>
+
+    <div class="user-section">
+      <h2>Your Learning Profile</h2>
+      <div class="user-form">
+        <input id="userId" placeholder="Enter your name" value="u1" />
+        <div class="interests">
+          <label>Select Your Interests (click multiple options):</label>
+          <div class="interests-container">
+            <div class="custom-select-wrapper">
+              <div id="customSelect" class="custom-select">
+                <div class="select-trigger">
+                  <span id="selectLabel">Choose your interests...</span>
+                  <span class="arrow">▼</span>
+                </div>
+                <div class="custom-options">
+                  <div class="option-group">
+                    <div class="group-label">Programming Languages</div>
+                    <div class="option" data-value="python">🐍 Python</div>
+                    <div class="option" data-value="javascript">⚡ JavaScript</div>
+                    <div class="option" data-value="java">☕ Java</div>
+                    <div class="option" data-value="cpp">⚙️ C++</div>
+                    <div class="option" data-value="csharp">💎 C#</div>
+                    <div class="option" data-value="go">🔥 Go</div>
+                    <div class="option" data-value="rust">🦀 Rust</div>
+                    <div class="option" data-value="php">🔵 PHP</div>
+                    <div class="option" data-value="ruby">💎 Ruby</div>
+                    <div class="option" data-value="swift">🍎 Swift</div>
+                  </div>
+                  <div class="option-group">
+                    <div class="group-label">Data & AI</div>
+                    <div class="option" data-value="data-science">📊 Data Science</div>
+                    <div class="option" data-value="machine-learning">🤖 Machine Learning</div>
+                    <div class="option" data-value="deep-learning">🧠 Deep Learning</div>
+                    <div class="option" data-value="ai">🚀 Artificial Intelligence</div>
+                    <div class="option" data-value="statistics">📈 Statistics</div>
+                    <div class="option" data-value="data-analysis">📊 Data Analysis</div>
+                    <div class="option" data-value="big-data">💾 Big Data</div>
+                    <div class="option" data-value="data-visualization">📈 Data Visualization</div>
+                  </div>
+                  <div class="option-group">
+                    <div class="group-label">Web Development</div>
+                    <div class="option" data-value="web-development">🌐 Web Development</div>
+                    <div class="option" data-value="frontend">🎨 Frontend Development</div>
+                    <div class="option" data-value="backend">⚙️ Backend Development</div>
+                    <div class="option" data-value="fullstack">🔧 Full Stack Development</div>
+                    <div class="option" data-value="react">⚛️ React</div>
+                    <div class="option" data-value="angular">🅰️ Angular</div>
+                    <div class="option" data-value="vue">💚 Vue.js</div>
+                    <div class="option" data-value="nodejs">💚 Node.js</div>
+                  </div>
+                  <div class="option-group">
+                    <div class="group-label">Mobile Development</div>
+                    <div class="option" data-value="mobile-development">📱 Mobile Development</div>
+                    <div class="option" data-value="android">🤖 Android Development</div>
+                    <div class="option" data-value="ios">🍎 iOS Development</div>
+                    <div class="option" data-value="flutter">💙 Flutter</div>
+                    <div class="option" data-value="react-native">⚛️ React Native</div>
+                  </div>
+                  <div class="option-group">
+                    <div class="group-label">DevOps & Cloud</div>
+                    <div class="option" data-value="devops">🔄 DevOps</div>
+                    <div class="option" data-value="cloud-computing">☁️ Cloud Computing</div>
+                    <div class="option" data-value="aws">🟠 Amazon Web Services</div>
+                    <div class="option" data-value="azure">🔵 Microsoft Azure</div>
+                    <div class="option" data-value="gcp">🔴 Google Cloud Platform</div>
+                    <div class="option" data-value="docker">🐳 Docker</div>
+                    <div class="option" data-value="kubernetes">⎈ Kubernetes</div>
+                  </div>
+                  <div class="option-group">
+                    <div class="group-label">Design & UX</div>
+                    <div class="option" data-value="ui-design">🎨 UI Design</div>
+                    <div class="option" data-value="ux-design">🧭 UX Design</div>
+                    <div class="option" data-value="graphic-design">🖼️ Graphic Design</div>
+                    <div class="option" data-value="web-design">🌐 Web Design</div>
+                  </div>
+                  <div class="option-group">
+                    <div class="group-label">Other</div>
+                    <div class="option" data-value="cybersecurity">🔒 Cybersecurity</div>
+                    <div class="option" data-value="blockchain">⛓️ Blockchain</div>
+                    <div class="option" data-value="game-development">🎮 Game Development</div>
+                    <div class="option" data-value="database">🗄️ Database Management</div>
+                    <div class="option" data-value="testing">🧪 Software Testing</div>
+                    <div class="option" data-value="project-management">📋 Project Management</div>
+                  </div>
+                  <div class="option-group">
+                    <div class="group-label">🇳🇵 Nepal Local</div>
+                    <div class="option" data-value="nepali-tech">🏫 Nepali Tech Education</div>
+                    <div class="option" data-value="nepali-training">🎓 Local IT Training</div>
+                    <div class="option" data-value="nepali-online">💻 Nepali Online Learning</div>
+                    <div class="option" data-value="digital-literacy">📱 Digital Literacy</div>
+                    <div class="option" data-value="e-governance">🏛️ E-Governance</div>
+                    <div class="option" data-value="fintech">💳 Fintech Nepal</div>
+                    <div class="option" data-value="entrepreneurship">🚀 Tech Entrepreneurship</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="selected-interests">
+            <span class="selected-label">Selected:</span>
+            <div id="selectedTags" class="tags"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="recommendations-section">
+      <h2>📚 Personalized Recommendations</h2>
+      <div class="recommendation-header">
+        <button id="btnFetch" class="get-recs-btn">
+          <span class="btn-icon">🎯</span>
+          Get Smart Recommendations
+        </button>
+        <div class="learning-stats">
+          <div class="stat-item">
+            <span class="stat-number" id="skillLevel">Take Quiz</span>
+            <span class="stat-label">Skill Level</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="quizScore">--</span>
+            <span class="stat-label">Quiz Score</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="totalInterests">0</span>
+            <span class="stat-label">Interests</span>
+          </div>
+        </div>
+      </div>
+      <div id="quizSection" class="quiz-section" style="display: none;">
+        <div class="quiz-header">
+          <h3>🧠 Skill Assessment Quiz</h3>
+          <p>Answer questions based on your selected interests to get personalized recommendations</p>
+          <div class="quiz-progress">
+            <div class="progress-bar">
+              <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <span id="progressText">Question 1 of 5</span>
+          </div>
+        </div>
+        <div id="quizContent" class="quiz-content">
+          <div id="questionCard" class="question-card">
+            <h4 id="questionText">Loading question...</h4>
+            <div id="questionOptions" class="question-options"></div>
+            <div class="quiz-actions">
+              <button id="nextQuestion" class="quiz-btn" disabled>Next Question</button>
+              <button id="skipQuestion" class="quiz-btn secondary">Skip</button>
+            </div>
+          </div>
+        </div>
+        <div id="quizResults" class="quiz-results" style="display: none;">
+          <h3>🎉 Quiz Completed!</h3>
+          <div class="results-summary">
+            <div class="result-item">
+              <span class="result-label">Your Score:</span>
+              <span id="finalScore" class="result-value">0/5</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">Skill Level:</span>
+              <span id="finalLevel" class="result-value">Beginner</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">Accuracy:</span>
+              <span id="finalAccuracy" class="result-value">0%</span>
+            </div>
+          </div>
+          <button id="startQuiz" class="quiz-btn">Retake Quiz</button>
+          <button id="showRecommendations" class="quiz-btn primary">Show My Recommendations</button>
+        </div>
+      </div>
+      <div id="learningTips" class="learning-tips"></div>
+      <div id="recommendations" class="content-grid"></div>
+    </div>
+
+    <div class="platforms-section">
+      <h2>� All Learning Content & Platforms</h2>
+      <div class="section-description">
+        <p>Discover courses, tutorials, and learning platforms tailored to your interests and skill level</p>
+      </div>
+      <div id="learningPlatforms" class="platforms-grid"></div>
+      <div id="allContent" class="content-grid"></div>
+    </div>
+
+    <div class="chatbot-section">
+      <h2>🤖 AI Learning Assistant</h2>
+      <div class="chat-container">
+        <div id="chatMessages" class="chat-messages"></div>
+        <div class="chat-input-container">
+          <input id="chatInput" type="text" placeholder="Ask me anything about learning programming, data science, or any tech topic..." />
+          <button id="chatSend" class="chat-send-btn">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/web/main.js"></script>
+</body>
+</html>
